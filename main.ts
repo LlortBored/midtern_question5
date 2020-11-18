@@ -15,7 +15,9 @@ input.onButtonPressed(Button.A, function () {
             `)
     } else if (count_down == 0) {
         basic.clearScreen()
-        basic.showString("   A wins")
+        basic.showString(" A wins")
+        basic.pause(1000)
+        count_down = -1
     }
 })
 input.onButtonPressed(Button.AB, function () {
@@ -35,7 +37,9 @@ input.onButtonPressed(Button.AB, function () {
             `)
     } else if (count_down == 0) {
         basic.clearScreen()
-        basic.showString("    Draw")
+        basic.showString(" Draw")
+        basic.pause(1000)
+        count_down = -1
     }
 })
 input.onButtonPressed(Button.B, function () {
@@ -55,7 +59,9 @@ input.onButtonPressed(Button.B, function () {
             `)
     } else if (count_down == 0) {
         basic.clearScreen()
-        basic.showString("   B wins")
+        basic.showString(" B wins")
+        basic.pause(1000)
+        count_down = -1
     }
 })
 let count_down = 0
